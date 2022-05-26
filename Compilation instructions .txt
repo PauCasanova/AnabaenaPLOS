@@ -1,0 +1,19 @@
+Install with the following commands:
+
+sudo apt install g++
+sudo apt install libgsl-dev
+sudo apt install fftw-dev
+sudo apt install libglc-dev (for GL/gl.h)
+sudo apt install libsdl-ttf2.0-dev (for SDL/SDL.h)
+sudo apt install libsdl-gfx1.2-dev (for SDL/SDL_gfxPrimitives.h)
+sudo apt install libsdl-image1.2-dev (necessary to produce images in a format diferent to BMP, not mandatory)
+sudo apt install libpnglite-dev
+
+
+Compilation command:
+g++ RevAllData.cpp -o DATA -lgsl -lgslcblas -lSDL -lSDL_gfx -lSDL_ttf -lSDL_image -lpng -lm -lgomp -fopenmp -std=c++11
+
+
+It is mandatory to have arial.ttf in the pathway present on the code.
+
+Execute the program using ./exec
